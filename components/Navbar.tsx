@@ -1,4 +1,4 @@
-import { Moon, User } from 'lucide-react'
+import { LogOutIcon, Moon, Settings, User } from 'lucide-react'
 import Link from 'next/link'
 import React from 'react'
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
@@ -26,15 +26,21 @@ const Navbar = () => {
   <AvatarImage src="https://tse4.mm.bing.net/th/id/OIP.M0Uak0pyXetvVhkUU-RMOAHaEJ?pid=Api&P=0&h=180" />
   <AvatarFallback>CN</AvatarFallback>
 </Avatar></DropdownMenuTrigger>
-  <DropdownMenuContent>
+  <DropdownMenuContent sideOffset={10}>
     <DropdownMenuLabel>My Account</DropdownMenuLabel>
     <DropdownMenuSeparator />
     <DropdownMenuItem>
-        <User/>
+        <User className='h-[1.2rem] w-[1.2rem] mr-2'/>
         Profile</DropdownMenuItem>
-    <DropdownMenuItem>Billing</DropdownMenuItem>
-    <DropdownMenuItem>Team</DropdownMenuItem>
-    <DropdownMenuItem>Subscription</DropdownMenuItem>
+    <DropdownMenuItem>
+        <Settings className='h-[1.2rem] w-[1.2rem] mr-2'/>
+        Settings
+    </DropdownMenuItem>
+    <DropdownMenuItem variant='destructive'>
+        <LogOutIcon className='h-[1.2rem] w-[1.2rem] mr-2'/>
+        LogOut
+    </DropdownMenuItem>
+    
   </DropdownMenuContent>
 </DropdownMenu>
         </div>
