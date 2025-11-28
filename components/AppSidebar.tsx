@@ -34,12 +34,12 @@ const items = [
  
 const AppSidebar = () => {
   return <Sidebar collapsible='icon'>
-    <SidebarHeader   >
+    <SidebarHeader className='py-4'   >
       <SidebarMenu>
         <SidebarMenuItem>
           <SidebarMenuButton asChild >
             <Link href={"/"}  >
-            <Image src ="/logo.jpeg" alt="logo" width={20} height= {20} className='rounded-full'/>
+            <Image src ="/logo.jpeg" alt="logo" width={20} height= {20} className='rounded' />
             <span className='font-medium' >SRISHTI JAISWAL</span>
             </Link>
           </SidebarMenuButton>
@@ -75,7 +75,7 @@ const AppSidebar = () => {
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <SidebarMenuButton>
-                  <User2/>SUYASH <ChevronUp className='ml-auto'/>
+                  <User2/>SUYASH <ChevronUp className='ml-auto font-medium'/>
                 </SidebarMenuButton>
               </DropdownMenuTrigger>
               <DropdownMenuContent align='end'>
