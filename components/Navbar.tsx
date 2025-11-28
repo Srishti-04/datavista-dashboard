@@ -49,7 +49,7 @@ const Navbar = () => {
         
 <DropdownMenu>
   <DropdownMenuTrigger><Avatar>
-  <AvatarImage src="https://tse4.mm.bing.net/th/id/OIP.M0Uak0pyXetvVhkUU-RMOAHaEJ?pid=Api&P=0&h=180" />
+  <AvatarImage src="logo.jpeg" />
   <AvatarFallback>CN</AvatarFallback>
 </Avatar></DropdownMenuTrigger>
   <DropdownMenuContent sideOffset={10}>
@@ -69,21 +69,7 @@ const Navbar = () => {
     
   </DropdownMenuContent>
 </DropdownMenu>
-<DropdownMenu>
-  <DropdownMenuTrigger asChild>
-    <Button variant={'outline'} size='icon'>
-      
-      <span className='sr-only'>Open Menu</span>
-    </Button>
-  </DropdownMenuTrigger>
-  <DropdownMenuContent>
-    
-    <DropdownMenuItem>Profile</DropdownMenuItem>
-    <DropdownMenuItem>Billing</DropdownMenuItem>
-    <DropdownMenuItem>Team</DropdownMenuItem>
-    <DropdownMenuItem>Subscription</DropdownMenuItem>
-  </DropdownMenuContent>
-</DropdownMenu>
+
 
         </div>
     </nav>
