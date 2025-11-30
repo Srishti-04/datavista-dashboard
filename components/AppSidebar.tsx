@@ -1,9 +1,10 @@
 import React from 'react'
-import { Calendar, ChevronUp, Home, Inbox, Plus, Projector, Search, Settings, User2 } from "lucide-react"
+import { Calendar, ChevronDown, ChevronUp, Home, Inbox, Plus, Projector, Search, Settings, User2 } from "lucide-react"
 import { Sidebar, SidebarContent, SidebarFooter, SidebarGroup, SidebarGroupAction, SidebarGroupContent, SidebarGroupLabel, SidebarHeader, SidebarMenu, SidebarMenuButton, SidebarMenuItem, SidebarSeparator } from './ui/sidebar'
 import Link from 'next/link'
 import Image from 'next/image'
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from './ui/dropdown-menu'
+import { Collapsible, CollapsibleContent, CollapsibleTrigger } from './ui/collapsible'
 const items = [
   {
     title: "Home",
@@ -95,6 +96,41 @@ const AppSidebar = () => {
             
           
         </SidebarGroup>
+        {/* Collapsible */}
+        <Collapsible defaultOpen className="group/collapsible">
+<SidebarGroup>
+          <SidebarGroupLabel asChild>
+            <CollapsibleTrigger>
+            Collapsible Group 
+            <ChevronDown className="ml-auto transition-transform group-data-[state=open]/collapsible:rotate-180" />
+          </CollapsibleTrigger> 
+
+          </SidebarGroupLabel>
+          <CollapsibleContent>
+            <SidebarGroupContent>
+
+              <SidebarMenu>
+                <SidebarMenuItem>
+                  <SidebarMenuButton asChild>
+                    <Link href={'/#'}>
+                    <Projector/>See All Projects</Link>
+
+                  </SidebarMenuButton>
+                </SidebarMenuItem>
+                <SidebarMenuItem>
+                  <SidebarMenuButton asChild>
+                    <Link href={'/#'}>
+                    <Plus/>Add Projects</Link>
+
+                  </SidebarMenuButton>
+                </SidebarMenuItem>
+              </SidebarMenu>
+            </SidebarGroupContent>
+            </CollapsibleContent>
+            
+          
+        </SidebarGroup>
+        </Collapsible>
 
       </SidebarContent>
       <SidebarFooter>
