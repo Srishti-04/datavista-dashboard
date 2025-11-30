@@ -1,6 +1,6 @@
 import React from 'react'
-import { Calendar, ChevronDown, ChevronUp, Home, Inbox, Plus, Projector, Search, Settings, User2 } from "lucide-react"
-import { Sidebar, SidebarContent, SidebarFooter, SidebarGroup, SidebarGroupAction, SidebarGroupContent, SidebarGroupLabel, SidebarHeader, SidebarMenu, SidebarMenuBadge, SidebarMenuButton, SidebarMenuItem, SidebarSeparator } from './ui/sidebar'
+import { Calendar, ChevronDown, ChevronUp, Home, Inbox, Plus, PlusIcon, Projector, Search, Settings, User2 } from "lucide-react"
+import { Sidebar, SidebarContent, SidebarFooter, SidebarGroup, SidebarGroupAction, SidebarGroupContent, SidebarGroupLabel, SidebarHeader, SidebarMenu, SidebarMenuBadge, SidebarMenuButton, SidebarMenuItem, SidebarMenuSub, SidebarMenuSubButton, SidebarMenuSubItem, SidebarSeparator } from './ui/sidebar'
 import Link from 'next/link'
 import Image from 'next/image'
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from './ui/dropdown-menu'
@@ -134,6 +134,45 @@ const AppSidebar = () => {
           
         </SidebarGroup>
         </Collapsible>
+        {/* NESTED */}
+        <SidebarGroup>
+          <SidebarGroupLabel>Nested Items 
+
+          </SidebarGroupLabel>
+          
+            <SidebarGroupContent>
+              <SidebarMenu>
+                <SidebarMenuItem>
+                  <SidebarMenuButton asChild>
+                    <Link href={'/#'}>
+                    <Projector/>See All Projects</Link>
+
+                  </SidebarMenuButton>
+          <SidebarMenuSub>
+            <SidebarMenuSubItem>
+              <SidebarMenuSubButton asChild>
+                <Link href={"/#"}>
+                <PlusIcon/>Add Project</Link>
+
+              </SidebarMenuSubButton>
+            </SidebarMenuSubItem>
+          </SidebarMenuSub>
+          <SidebarMenuSub>
+            <SidebarMenuSubItem>
+              <SidebarMenuSubButton asChild>
+                <Link href={"/#"}>
+                <PlusIcon/>Add Category</Link>
+
+              </SidebarMenuSubButton>
+            </SidebarMenuSubItem>
+          </SidebarMenuSub>
+                </SidebarMenuItem>
+                
+              </SidebarMenu>
+            </SidebarGroupContent>
+            
+          
+        </SidebarGroup>
 
       </SidebarContent>
       <SidebarFooter>
