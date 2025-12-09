@@ -5,7 +5,13 @@ import React from 'react'
 
 const Homepage = () => {
   return (
-    <div className=''>
+    <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4'>
+      <div className=" bg-primary-foreground p-4 rounded-lg xl:col-span-2">Test</div>
+      <div className="bg-primary-foreground p-4 rounded-lg">Test</div>
+      <div className="bg-primary-foreground p-4 rounded-lg">Test</div>
+      <div className="bg-primary-foreground p-4 rounded-lg">Test</div>
+      <div className="bg-primary-foreground p-4 rounded-lg xl:col-span-2">Test</div>
+      <div className="bg-primary-foreground p-4 rounded-lg">Test</div>
       
 
 
