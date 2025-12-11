@@ -1,3 +1,4 @@
+import AppAreaChart from '@/components/AppAreaChart';
 import AppBarChart from '@/components/AppBarChart';
 import { Button } from '@/components/ui/button'
 import { CirclePlus } from "lucide-react";
@@ -12,7 +13,7 @@ const Homepage = () => {
       <div className="bg-primary-foreground p-4 rounded-lg">Test</div>
       <div className="bg-primary-foreground p-4 rounded-lg">Test</div>
       <div className="bg-primary-foreground p-4 rounded-lg xl:col-span-2">Test</div>
-      <div className="bg-primary-foreground p-4 rounded-lg">Test</div>
+      <div className="bg-primary-foreground p-4 rounded-lg"><AppAreaChart/></div>
       
 
 
