@@ -12,7 +12,7 @@ const Homepage = () => {
       <div className="bg-primary-foreground p-4 rounded-lg">Test</div>
       <div className="bg-primary-foreground p-4 rounded-lg">Test</div>
       <div className="bg-primary-foreground p-4 rounded-lg">Test</div>
-      <div className="bg-primary-foreground p-4 rounded-lg xl:col-span-2">Test</div>
+      <div className="bg-primary-foreground p-4 rounded-lg xl:col-span-2">t</div>
       <div className="bg-primary-foreground p-4 rounded-lg"><AppAreaChart/></div>
       
 

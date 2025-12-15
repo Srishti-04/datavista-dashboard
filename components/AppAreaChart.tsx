@@ -7,11 +7,11 @@ import { Area, AreaChart, Bar, BarChart, CartesianGrid, XAxis, YAxis } from 'rec
 const ChartConfig = {
   desktop: {
     label: "Desktop",
-    color: "var(--chart-1)",
+    color: "var(--chart-2)",
   },
   mobile: {
     label: "Mobile",
-    color: "var(--chart-4)",
+    color: "var(--chart-1)",
   },
 } satisfies ChartConfig
 const chartData = [
