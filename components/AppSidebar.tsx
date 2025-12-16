@@ -1,3 +1,4 @@
+"use client";
 import React from 'react'
 import { Calendar, ChevronDown, ChevronUp, Home, Inbox, Plus, PlusIcon, Projector, Search, Settings, User2 } from "lucide-react"
 import { Sidebar, SidebarContent, SidebarFooter, SidebarGroup, SidebarGroupAction, SidebarGroupContent, SidebarGroupLabel, SidebarHeader, SidebarMenu, SidebarMenuBadge, SidebarMenuButton, SidebarMenuItem, SidebarMenuSub, SidebarMenuSubButton, SidebarMenuSubItem, SidebarSeparator } from './ui/sidebar'
