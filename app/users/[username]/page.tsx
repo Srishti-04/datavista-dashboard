@@ -15,6 +15,8 @@ import {
 } from "@/components/ui/sheet"
 import { Button } from '@/components/ui/button'
 import EditUser from '@/components/EditUser'
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
+import AppLineChart from '@/components/AppLineChart'
 
 const SingleUserpage = () => {
   return (
@@ -129,9 +131,23 @@ const SingleUserpage = () => {
     {/* RIGHT */}
     <div className='w-full xl:2/3 space-y-6'>  
     {/* User Card Container  */}
-<div className='bg-primary-foreground p-4 rounded-lg'>User Card</div>
+<div className='bg-primary-foreground p-4 rounded-lg space-y-4'>
+  <div className='flex items-center gap-2'>
+    <Avatar className='size-12'>
+      <AvatarImage  src="/logo.jpeg" />
+      <AvatarFallback>SJ</AvatarFallback>
+    </Avatar>
+    <h1 className='text-xl font-semibold'>Srishti Jaiswal</h1>
+  </div>
+  <p className='text-sm text-muted-foreground'>
+    I am a passionate tech enthusiast skilled in the MERN stack, Python, and API integration, with hands-on experience in building AI-powered projects like a Gemini-based event organizer.
+
+  </p>
+</div>
 {/* Chart  Container  */}
-<div className='bg-primary-foreground p-4 rounded-lg'>Chart</div>
+
+<div className='bg-primary-foreground p-4 rounded-lg'><AppLineChart/></div>
+<h1 className='text-xl font-semibold'>User Activity</h1>
     
     </div>
 </div>
