@@ -1,4 +1,3 @@
-
 DataVista Dashboard
 
 DataVista is a modular, interactive, and responsive dashboard built with Next.js, React, Tailwind CSS, ShadCN UI, Recharts, and TanStack Table. It provides advanced UI architecture, dynamic data visualization, and enterprise-grade data management.
