@@ -1,36 +1,44 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+DataVista Dashboard
 
-First, run the development server:
+DataVista is a modular, interactive, and responsive dashboard built with Next.js, React, Tailwind CSS, ShadCN UI, Recharts, and TanStack Table. It provides advanced UI architecture, dynamic data visualization, and enterprise-grade data management.
 
-```bash
+Features
+1. Advanced UI Architecture
+Modular Component System: Components like buttons, avatars, and sidebars are installed individually to keep the codebase lean.
+Radix UI Logic: Handles complex behaviors like keyboard navigation, ARIA attributes, and focus management.
+Clean Conditional Styling: Uses a cn utility function for readable conditional Tailwind CSS classes.
+2. Navigation & Layout
+Persistent Sidebar: Collapsible groups, nested items, and action buttons with state saved in browser cookies.
+Responsive Grid System: Adjusts the number of columns (1–4) based on screen size.
+Sticky Navbar: Stays visible while scrolling with high z-index positioning.
+3. Interactivity & Theming
+Theme Toggling: Light, dark, and system modes using next-themes with CSS variable-based colors.
+Interactive Overlays: Includes Sheets, Popovers, and Hover Cards for better UX.
+Breadcrumbs: Tracks navigation paths across the dashboard, user lists, and profiles.
+4. Data Visualization (Recharts)
+Dynamic Charts: Bar, area, line, and pie charts for revenue, visitors, browser usage, and user activity.
+Enhanced UX: Interactive tooltips and legends.
+Themed Visuals: Chart colors linked to global CSS variables for automatic theme updates.
+5. Data Management (TanStack Table)
+Enterprise Features: Advanced sorting, pagination, and row selection for the Payments page.
+Custom Cell Rendering: Currency formatting, color-coded status badges.
+6. Form Handling & Validation
+Schema-Based Validation: Using React Hook Form and Zod for real-time input validation.
+Error Reporting: Custom error messages for invalid inputs like emails, usernames, and roles.
+Tech Stack
+Frontend: Next.js, React, Tailwind CSS
+UI Components: ShadCN UI with Radix UI
+Data Visualization: Recharts
+Data Management: TanStack Table
+Form Validation: React Hook Form + Zod
+Installation
+git clone <repository-url>
+cd datavista-dashboard
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Usage
+Navigate through the sidebar to access dashboard sections.
+Toggle themes via the settings icon.
+Interact with charts to explore data.
+Use the Payments table for sorting, pagination, and selection.
